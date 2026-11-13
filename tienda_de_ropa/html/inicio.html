@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f1e9">
+    <title>ENTRETIEMPO | Ropa para todos los días</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/inicio.css">
+</head>
+<body>
+    <div class="announcement">Envío gratis en compras superiores a $180.000</div>
+
+    <header class="site-header">
+        <a class="brand" href="#inicio" aria-label="Entretiempo, inicio">ENTRETIEMPO<span>.</span></a>
+        <nav class="main-nav" aria-label="Navegación principal">
+            <a href="#coleccion">Nueva colección</a>
+            <a href="#coleccion" data-nav-category="mujer">Mujer</a>
+            <a href="#coleccion" data-nav-category="hombre">Hombre</a>
+            <a href="#coleccion" data-nav-category="accesorios">Accesorios</a>
+        </nav>
+        <div class="header-actions">
+            <label class="search-box">
+                <span aria-hidden="true">⌕</span>
+                <input id="product-search" type="search" placeholder="Buscar prendas" aria-label="Buscar prendas">
+            </label>
+            <button class="bag-button" type="button" aria-label="Bolsa de compras, 0 productos">
+                Bolsa <span id="bag-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <main id="inicio">
+        <section class="hero" aria-labelledby="hero-title">
+            <img class="hero-image" src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=2000&q=85" alt="Amigas disfrutando un día de compras">
+            <div class="hero-shade"></div>
+            <div class="hero-content">
+                <p class="eyebrow">Vestirse también es sentirse bien</p>
+                <h1 id="hero-title">Tu estilo,<br>tu momento.</h1>
+                <p>Piezas favoritas para acompañarte en cada plan.</p>
+                <a class="hero-link" href="#coleccion">Explorar colección <span aria-hidden="true">→</span></a>
+            </div>
+            <span class="hero-note">NUEVA TEMPORADA · 2026</span>
+        </section>
+
+        <section class="collection" id="coleccion" aria-labelledby="collection-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Hecho para combinar</p>
+                    <h2 id="collection-title">Lo nuevo de la temporada</h2>
+                </div>
+                <p class="section-note">Prendas versátiles, detalles especiales<br>y mucho espacio para ser tú.</p>
+            </div>
+
+            <div class="collection-toolbar">
+                <div class="filters" role="group" aria-label="Filtrar por categoría">
+                    <button class="filter-button is-active" type="button" data-filter="todos" aria-pressed="true">Todo</button>
+                    <button class="filter-button" type="button" data-filter="mujer" aria-pressed="false">Mujer</button>
+                    <button class="filter-button" type="button" data-filter="hombre" aria-pressed="false">Hombre</button>
+                    <button class="filter-button" type="button" data-filter="accesorios" aria-pressed="false">Accesorios</button>
+                </div>
+                <span class="result-count" id="result-count">6 productos</span>
+            </div>
+
+            <div class="product-grid" id="product-grid">
+                <article class="product" data-category="mujer" data-name="camisa lino azul">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1598554747436-c9293d6a588f?auto=format&fit=crop&w=900&q=80" alt="Camisa azul de lino">
+                        <span class="product-label">Favorito</span>
+                    </div>
+                    <div class="product-info"><div><h3>Camisa de lino</h3><p>Mujer · Azul cielo</p></div><strong>$119.000</strong></div>
+                    <button class="add-button" type="button" data-product="Camisa de lino">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+                </article>
+
+                <article class="product" data-category="hombre" data-name="camiseta algodón blanca">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=900&q=80" alt="Camiseta blanca de algodón">
+                    </div>
+                    <div class="product-info"><div><h3>Camiseta esencial</h3><p>Hombre · Blanco</p></div><strong>$69.000</strong></div>
+                    <button class="add-button" type="button" data-product="Camiseta esencial">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+                </article>
+
+                <article class="product" data-category="mujer" data-name="vestido estampado floral">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1539008835657-9e8e9680c956?auto=format&fit=crop&w=900&q=80" alt="Vestido estampado en tonos cálidos">
+                        <span class="product-label product-label-green">Nuevo</span>
+                    </div>
+                    <div class="product-info"><div><h3>Vestido de verano</h3><p>Mujer · Estampado</p></div><strong>$159.000</strong></div>
+                    <button class="add-button" type="button" data-product="Vestido de verano">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+                </article>
+
+                <article class="product" data-category="hombre" data-name="chaqueta ligera beige">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1516257984-b1b4d707412e?auto=format&fit=crop&w=900&q=80" alt="Chaqueta ligera para hombre">
+                    </div>
+                    <div class="product-info"><div><h3>Chaqueta ligera</h3><p>Hombre · Arena</p></div><strong>$219.000</strong></div>
+                    <button class="add-button" type="button" data-product="Chaqueta ligera">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+                </article>
+
+                <article class="product" data-category="accesorios" data-name="bolso tejido natural">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=900&q=80" alt="Bolso pequeño de diseño clásico">
+                    </div>
+                    <div class="product-info"><div><h3>Bolso de diario</h3><p>Accesorios · Miel</p></div><strong>$139.000</strong></div>
+                    <button class="add-button" type="button" data-product="Bolso de diario">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+                </article>
+
+                <article class="product" data-category="accesorios" data-name="gafas sol accesorio">
+                    <div class="product-image-wrap">
+                        <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80" alt="Gafas de sol con montura oscura">
+                        <span class="product-label">Últimas unidades</span>
+                    </div>
+                    <div class="product-info"><div><h3>Gafas de sol</h3><p>Accesorios · Carey</p></div><strong>$89.000</strong></div>
+                    <button class="add-button" type="button" data-product="Gafas de sol">Añadir a la bolsa <span aria-hidden="true">+</span></button>
+                </article>
+            </div>
+            <p class="empty-state" id="empty-state" hidden>No encontramos productos con esa búsqueda.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a class="brand" href="#inicio">ENTRETIEMPO<span>.</span></a>
+        <p>Prendas para vivir a tu manera.</p>
+        <a href="mailto:hola@entretienda.co">¿Necesitas ayuda? Escríbenos</a>
+        <small>© 2026 Entretiempo. Hecho para todos los días.</small>
+    </footer>
+
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const products = document.querySelectorAll('.product');
+        const searchInput = document.querySelector('#product-search');
+        const resultCount = document.querySelector('#result-count');
+        const emptyState = document.querySelector('#empty-state');
+        const bagCount = document.querySelector('#bag-count');
+        const bagButton = document.querySelector('.bag-button');
+        let activeFilter = 'todos';
+        let bagTotal = 0;
+
+        function updateProducts() {
+            const query = searchInput.value.trim().toLocaleLowerCase('es');
+            let visibleCount = 0;
+
+            products.forEach((product) => {
+                const matchesCategory = activeFilter === 'todos' || product.dataset.category === activeFilter;
+                const matchesSearch = product.dataset.name.includes(query);
+                const isVisible = matchesCategory && matchesSearch;
+                product.hidden = !isVisible;
+                if (isVisible) visibleCount += 1;
+            });
+
+            resultCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'producto' : 'productos'}`;
+            emptyState.hidden = visibleCount !== 0;
+        }
+
+        filterButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                activeFilter = button.dataset.filter;
+                filterButtons.forEach((filter) => {
+                    const isActive = filter === button;
+                    filter.classList.toggle('is-active', isActive);
+                    filter.setAttribute('aria-pressed', String(isActive));
+                });
+                updateProducts();
+            });
+        });
+
+        document.querySelectorAll('[data-nav-category]').forEach((link) => {
+            link.addEventListener('click', () => {
+                const filter = document.querySelector(`[data-filter="${link.dataset.navCategory}"]`);
+                filter.click();
+            });
+        });
+
+        searchInput.addEventListener('input', updateProducts);
+
+        document.querySelectorAll('.add-button').forEach((button) => {
+            button.addEventListener('click', () => {
+                bagTotal += 1;
+                bagCount.textContent = bagTotal;
+                bagButton.setAttribute('aria-label', `Bolsa de compras, ${bagTotal} ${bagTotal === 1 ? 'producto' : 'productos'}`);
+                button.innerHTML = 'Añadido <span aria-hidden="true">✓</span>';
+                window.setTimeout(() => {
+                    button.innerHTML = 'Añadir a la bolsa <span aria-hidden="true">+</span>';
+                }, 1200);
+            });
+        });
+    </script>
+</body>
+</html>
